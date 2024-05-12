@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div> <!--Nav-->
+        <div class=" fixed top-0 w-full bg-white " x-data="{ isOpen: false }">
+            <nav class="flex items-center py-5 container mx-auto max-sm:px-5 justify-between">
+                <div class="flex items-center space-x-10">
+                    <img class="w-10" src="logo.png" alt="">
+                    <ul class="flex space-x-10 max-lg:hidden">
+                        <li class="1/7">
+                            <a href="#"></a>
+                            <span>Invest</span>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <span>Later</span>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <span>Spend</span>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <span>Early</span>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <span>Earn</span>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <span>Grow</span>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <span>Pricing</span>
+                    </ul>
+                </div>
+              
+                
+                <div class="flex  space-x-4 max-lg:hidden">
+                    <span class="text-primary p-2">Log in</span>
+                    <span class="rounded-full bg-lime-500 text-white pl-10 p-2 pr-10">Get started</span>
+                </div>
+                <img class="w-7 lg:hidden justify-self-end cursor-pointer" src="mobile.png" alt="" x-on:click="isOpen = ! isOpen">
+                
+            </nav>
+            <div class="border-b-[1px] px-5 absolute top-18 bg-white w-full lg:hidden" x-show="isOpen">
+                <ul class="flex flex-col space-y-5 pb-5">
+                    <li class="py-1">
+                        <a href="#">Invest</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#">Later</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#">Spend</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#">Early</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#">Earn</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#">Grow</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#">Pricing</a>
+                </ul>
+            </div>
+        </div>
+    </div> <!--end nav-->
+    <div class="bg-slate-100 pt-24">
+        <div class=" container mx-auto flex items-center max-lg:flex-col max-sm:px-5">
+            <div class="flex-1">
+                <h1 class="text-5xl font-bold max-w-md">Acorns helps you grow your money</h1>
+                <p class="text-3xl mt-8 max-w-md">
+                    Take control with all-in-one
+                    investment, retirement, checking and
+                    more.
+                </p>
+                <button class="rounded-full bg-lime-500 text-white pl-10 p-2 pr-10 mt-7">Get started</button>
+            </div>
+            <div class="flex-1 justify-end">
+                <img class="" src="img.png" alt="">
+            </div>  
+        </div>
+    </div>
+</body>
+</html>
